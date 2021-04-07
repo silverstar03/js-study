@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function get_member1(){
+            return 'egoing';
+        }
+        
+        function get_member2(){
+            return 'k8805';
+        }
+ 
+    alert(get_member1());
+    alert(get_member2());
+
+    //함수를 다른 방법으로 정의
+    var numbering = function (){
+        i = 0;
+        while(i < 10){
+            document.write(i);
+            i += 1;
+        }   
+    }
+    numbering();
+
+    //함수를 괄호로 묶고 바로 호출
+    //익명 함수라고 함(이름이 없고 바로 실행) - 일회성일때 자주 사용
+    (function (){
+        i = 0;
+        while(i < 10){
+            document.write(i);
+            i += 1;  
+        }
+    })();
+    </script>
+</body>
+</html>

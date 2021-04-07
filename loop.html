@@ -1,0 +1,28 @@
+<!-- 반복문 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    document.write('Coding everbody <br />');
+
+    var i = 0;
+    // 종료조건으로 i의 값이 10보다 작다면 true, 같거나 크다면 false가 된다.
+    while(i < 10){
+        // 반복이 실행될 때마다 coding everybody <br />이 출력된다. <br /> 줄바꿈을 의미하는 HTML 태그
+        document.write('coding everybody <br />');
+        // i의 값이 1씩 증가한다.
+        i++
+    }
+
+    for(var i = 0; i < 10; i++){ //제일 끝에는 ;쓰지 않음
+    document.write('coding everybody'+i+'<br />');
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 'var'가 없어도 되지만 있어야 좋은 습관
+        var id = prompt('아이디를 입력해주세요.');
+        if(id=='egoing'){
+            var password = prompt('비밀번호를 입력해주세요.');
+            if(password==='111111'){
+                alert('인증 했습니다.');
+            } else {
+                alert('인증에 실패 했습니다.');
+            }
+        } else {
+            alert('인증에 실패 했습니다.');
+        }
+
+        //위 코드를 &&를 사용하여 개선
+        id = prompt('아이디를 입력해주세요.');
+        password = prompt('비밀번호를 입력해주세요.');
+        if(id=='egoing' && password=='111111'){
+            alert('인증 했습니다.');
+        } else {
+            alert('인증에 실패 했습니다.');
+        }
+
+        id = prompt('아이디를 입력해주세요.');
+        password = prompt('비밀번호를 입력해주세요.');
+        if((id==='egoing' || id==='k8805' || id==='sorialgi') && password==='111111'){
+            alert('인증 했습니다.');
+        } else {
+            alert('인증에 실패 했습니다.');
+        }
+
+        //빈문자열, undefined은 false로 간주
+    </script>
+</body>
+</html>
